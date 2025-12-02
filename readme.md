@@ -1,80 +1,58 @@
-# FSD-33 — Task 10
+🥘 Recipes App
+-----------------
 
-Short, focused repository for Task 10 in the FSD-33 class. Contains the exercise files, solutions, and supporting assets for the task. Use this README as the single source of setup, run, and contribution instructions.
+A CRUD (Create, Read, Update, Delete) API for managing recipes, built with Node.js, Express.js, and MongoDB.
+The application follows the MVC architecture and includes API documentation using Postman.
 
-## Contents
-- A small interactive exercise or assignment.
-- HTML / CSS / JavaScript or framework source files (found in the repository root or `src/`).
-- Asset files (images, fonts) in `assets/` or `public/`.
-- Optional config files: `package.json`, `.gitignore`, etc.
+🌐 API Endpoints
+==================
 
-## Quick start
+Create a recipe – POST api/recipes
+Get all recipes – GET api/recipes
+Get recipe by ID – GET api/recipes/:id
+Update recipe by ID – PUT api/recipes/:id
+Delete recipe by ID – DELETE api/recipes/:id
 
-1. Clone the repo
-    ```
-    git clone <repo-url>
-    cd "<path-to-repo>"
-    ```
-2. If the project is plain HTML/CSS/JS:
-    - Open `index.html` in a browser.
-3. If the project uses Node/npm:
-    ```
-    npm install
-    npm start      # or: npm run dev
-    ```
-4. To build for production:
-    ```
-    npm run build
-    ```
+🛠 Tech Stack
+==============
 
-## Scripts (common)
-- npm start — start dev server
-- npm run build — production build
-- npm test — run tests (if any)
-- npm run lint — run linter (if configured)
+Node.js
 
-Adjust commands to match the project's `package.json`.
+Express.js
 
-## Project structure (example)
-```
-.
-├─ index.html
-├─ README.md
-├─ package.json
-├─ src/
-│  ├─ index.js
-│  ├─ App.js
-│  └─ styles.css
-├─ public/ or assets/
-└─ tests/
-```
-Replace entries above with the actual files in this folder.
+MongoDB + Mongoose
 
-## Notes for maintainers
-- Keep the task focused and minimal: one or two requirements and clear acceptance criteria.
-- Include short inline comments in solution files to explain non-obvious parts.
-- If using a framework, include the versions in `package.json` and lockfile.
+Postman (for API testing and documentation)
 
-## Contributing
-1. Create a branch: `git checkout -b feat/task10-improvement`
-2. Make minimal, well-scoped commits.
-3. Open a pull request describing changes and purpose.
-4. Keep changes focused on the task; avoid unrelated refactors.
+✅ Features
+=============
 
-## Recommended metadata
-- Add a LICENSE file (MIT or your preferred license).
-- Add a short description and keywords in `package.json` (if present).
-- Add a short author/contact line below if you want others to reach you.
+MVC architecture implemented
 
-## Troubleshooting
-- Dev server not starting: confirm Node version (use the one specified in engines or nvmrc) and reinstall dependencies.
-- Styling or assets missing: verify paths and that `assets/` is included in the repository.
+Full CRUD operations for recipes
 
----
+MongoDB integration using Mongoose
 
-If you want, I can:
-- Generate a ready-to-use README tailored to the exact files in this folder (provide a file listing), or
-- Create a LICENSE, or
-- Add a `package.json` with basic scripts.
+Proper error handling
 
-Replace this placeholder text with actual project-specific details when available.
+Clean and well-structured code
+
+Postman API documentation included
+
+📘 API Documentation
+=====================
+
+All endpoints tested and documented using Postman.
+
+Postman Documentation Link: https://documenter.getpostman.com/view/50347548/2sB3dMwVok
+
+🚀 Deployment
+===============
+
+Deployed the API using:
+
+Render: https://task10-47wz.onrender.com
+
+👩‍💻 Author
+
+Sundari C
